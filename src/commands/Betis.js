@@ -1,5 +1,5 @@
 import { CommandInteraction, Client, SlashCommandBuilder } from "discord.js";
-import { Command } from "../Command";
+import { Command } from "../Command.js";
 
 
 export const Betis = new Command(
@@ -7,7 +7,7 @@ export const Betis = new Command(
     .setName("betis")
     .setDescription("Viva el Betis y viva Bobobo"),
 
-    async (client: Client, interaction: CommandInteraction) => {
+    async (client, interaction) => {
         const content = "Vivalbetis";
 
         await interaction.followUp({

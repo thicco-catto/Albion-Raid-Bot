@@ -1,8 +1,8 @@
-import { CommandInteraction, Client, EmbedBuilder, SlashCommandBuilder } from "discord.js";
-import { Command } from "../Command";
+import { EmbedBuilder, SlashCommandBuilder } from "discord.js";
+import { Command } from "../Command.js";
 
 
-function GetAuthor(client: CommandInteraction){
+function GetAuthor(client){
     if(client.user === null){
         return null;
     }
@@ -20,7 +20,7 @@ export const NewRaid = new Command(
     .setName("raid")
     .setDescription("Crea una nueva raid."),
 
-    async (client: Client, interaction: CommandInteraction) => {
+    async (client, interaction) => {
         const RaidEmbed = new EmbedBuilder()
             .setTitle("Nueva Raid")
             .setDescription("Reacciona con un emoticono para elegir tu rol");

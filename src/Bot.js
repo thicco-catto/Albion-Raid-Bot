@@ -1,10 +1,10 @@
 import { Client, GatewayIntentBits, Partials } from "discord.js";
-import interactionCreate from "./listeners/interactionCreate";
-import ready from "./listeners/ready";
-import messageReactionAdd from "./listeners/messageReactionAdd";
-import messageReactionRemove from "./listeners/messageReactionRemove";
+import interactionCreate from "./listeners/interactionCreate.js";
+import ready from "./listeners/ready.js";
+import messageReactionAdd from "./listeners/messageReactionAdd.js";
+import messageReactionRemove from "./listeners/messageReactionRemove.js";
 
-const token = process.env.TOKEN; // add your token here
+const token = "MTAzMDU4NDM2MTg2NDY3NTM4MA.GJXic7.ZeD6FVr1J_vwHOVkxshF1MBh9NyYLmY5tfKMuw"; // add your token here
 
 console.log("Bot is starting...");
 

@@ -1,7 +1,7 @@
-import { Client, EmbedBuilder, GuildEmoji, MessageReaction, PartialMessageReaction, PartialUser, ReactionEmoji, User } from "discord.js";
+import { EmbedBuilder } from "discord.js";
 
 
-function GetEmojiStringFromEmoji(emoji: GuildEmoji | ReactionEmoji){
+function GetEmojiStringFromEmoji(emoji){
     if(emoji.name === null){
         return "Avisadme si sale esto xd";
     }
@@ -20,8 +20,8 @@ function GetEmojiStringFromEmoji(emoji: GuildEmoji | ReactionEmoji){
 }
 
 
-export default (client: Client): void => {
-    client.on("messageReactionRemove", (reaction: MessageReaction | PartialMessageReaction, user: User | PartialUser) => {
+export default (client) => {
+    client.on("messageReactionRemove", (reaction, user) => {
         if(client.user === null){ return; }
         if(user.username === null){ return; }
         if(reaction.message.author === null) { return; }

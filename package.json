@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "discord bot to help set up raids for Albion Online",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "ts-node src/Bot.ts"
+    "start": "node src/Bot.js"
   },
   "repository": {
     "type": "git",
