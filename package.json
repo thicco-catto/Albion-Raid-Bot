@@ -1,0 +1,28 @@
+{
+  "name": "albion-raid-bot",
+  "version": "1.0.0",
+  "description": "discord bot to help set up raids for Albion Online",
+  "main": "index.js",
+  "scripts": {
+    "test": "help",
+    "start": "ts-node src/Bot.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thicco-catto/Albion-Rain-Bot.git"
+  },
+  "author": "Thicco Catto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thicco-catto/Albion-Rain-Bot/issues"
+  },
+  "homepage": "https://github.com/thicco-catto/Albion-Rain-Bot#readme",
+  "dependencies": {
+    "discord.js": "^14.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
