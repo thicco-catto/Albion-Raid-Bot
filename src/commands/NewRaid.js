@@ -20,12 +20,12 @@ export const NewRaid = new Command(
     .setName("raid")
     .setDescription("Crea una nueva raid.")
     .addStringOption(option =>
-		option.setName("Nombre")
-			.setDescription("Nombre para la raid")
+		option.setName('Nombre')
+			.setDescription('Nombre para la raid')
 			.setRequired(false)),
 
     async (client, interaction) => {
-        let name = interaction.options.getString("Nombre")
+        let name = interaction.options.getString('Nombre')
 
         if(name === null || name === undefined){
             name = "Nueva raid"
