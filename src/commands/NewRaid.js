@@ -18,11 +18,21 @@ function GetAuthor(client){
 export const NewRaid = new Command(
     new SlashCommandBuilder()
     .setName("raid")
-    .setDescription("Crea una nueva raid."),
+    .setDescription("Crea una nueva raid.")
+    .addStringOption(option =>
+		option.setName("Nombre")
+			.setDescription("Nombre para la raid")
+			.setRequired(false)),
 
     async (client, interaction) => {
+        let name = interaction.options.getString("Nombre")
+
+        if(name === null || name === undefined){
+            name = "Nueva raid"
+        }
+
         const RaidEmbed = new EmbedBuilder()
-            .setTitle("Nueva Raid")
+            .setTitle(name)
             .setDescription("Reacciona con un emoticono para elegir tu rol");
 
         const author = GetAuthor(interaction);
