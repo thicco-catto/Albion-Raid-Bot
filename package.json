@@ -4,7 +4,6 @@
   "description": "discord bot to help set up raids for Albion Online",
   "main": "index.js",
   "scripts": {
-    "test": "help",
     "start": "ts-node src/Bot.ts"
   },
   "repository": {

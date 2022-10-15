@@ -1,4 +1,4 @@
-import { Client, ClientOptions, GatewayIntentBits, Partials } from "discord.js";
+import { Client, GatewayIntentBits, Partials } from "discord.js";
 import interactionCreate from "./listeners/interactionCreate";
 import ready from "./listeners/ready";
 import messageReactionAdd from "./listeners/messageReactionAdd";
