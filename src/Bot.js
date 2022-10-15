@@ -4,7 +4,7 @@ import ready from "./listeners/ready.js";
 import messageReactionAdd from "./listeners/messageReactionAdd.js";
 import messageReactionRemove from "./listeners/messageReactionRemove.js";
 
-const token = "MTAzMDU4NDM2MTg2NDY3NTM4MA.GJXic7.ZeD6FVr1J_vwHOVkxshF1MBh9NyYLmY5tfKMuw"; // add your token here
+const token = process.env.TOKEN; // add your token here
 
 console.log("Bot is starting...");
 
